@@ -1,0 +1,208 @@
+*{
+    font-family: sans-serif;
+}
+.background{
+    background: url(/assets/img/Hero2.jpg);
+    position: relative;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    padding: 0;
+    margin: 0;
+    /* width: 100%; */
+}
+.dark-bg{
+    opacity: .8;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: black;
+    padding-right: 10px;
+    margin: 0;
+}
+#header{
+    position: fixed;
+    padding-top: 100px;
+    font-size: 15px;
+    justify-content: center;
+}
+.navbar > ul > li{
+    position: relative;
+}
+.navbar *{
+list-style: none;
+
+}
+.navbar a{
+    display: flex;
+    margin-bottom: 8px;
+    background: grey;
+    height: 36px;
+    /* border: 1px solid red; */
+    color: white;
+    overflow: hidden;
+    border-radius: 50px;
+    align-items: center;
+    padding: 5px 5px;
+}
+.navbar a span{
+    display: none;
+    margin-left: 10px;
+}
+ a:hover, a:hover i, a:hover span {
+    color: white;
+    display: flex;
+    font-size: 15px;
+}
+.navbar a i{
+    color: white;
+}
+.intro{
+    color: lightskyblue;
+    text-align: center;
+    text-transform: capitalize;
+    padding-top: 300px;
+}
+.intro h1{
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+.social{
+    text-align: center;
+}
+.social a{
+    color: skyblue;
+    /* font-weight: bolder; */
+    font-size: 2rem;
+    padding: 0px 10px;
+}
+.social a:hover i{
+    color: blue;
+    background: red;
+ }
+
+
+.contents{
+    /* margin: 2rem; */
+    left: 0px;
+}
+.contents h1{
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 20px;
+
+}
+
+.contents p{
+  padding: 0px 5px; 
+  font-weight: lighter; 
+}
+
+.image{
+    height: 10vh;
+}
+.about  h1{
+    color: darkgray;
+    text-transform: capitalize;
+    font-size: large;
+}
+.about{
+
+}
+.profile1 ul li{
+    margin-left: -2rem;
+    list-style: none;
+}
+.profile1 i{
+    color: darkgray;
+    margin-left: 4px;
+}
+.profile1 strong{
+    margin-left: 5px;
+}
+.profile1 span{
+    margin-left: 10px;
+}
+.profile2 ul li{
+    margin-left: -2rem;
+    list-style: none;
+}
+.profile2 i{
+    color: darkgray;
+    margin-left: 4px;
+}
+.profile2 strong{
+    margin-left: 5px;
+}
+.profile2 span{
+    margin-left: 10px;
+}
+.and{
+    text-transform: capitalize;
+    padding-top: 10px;
+}
+.skills{
+    text-transform: capitalize;
+    padding-left: 30px;
+}
+.skills li{
+    list-style: circle;
+}
+.hobbies{
+    text-transform: capitalize;
+    padding-left: 40px;
+}
+.hobbies li{
+    list-style: circle;
+}
+.summary{
+     padding: 20px;
+     border-right: 1px solid black;
+}
+.summary h1{
+    text-transform: capitalize;
+    font-weight: bold;
+    margin-left: -15px;
+}
+.blue{
+    text-transform: uppercase;
+}
+.summary h5{
+    text-transform: uppercase;
+}
+.summary p{
+    font-size: 15px;
+}
+.summary li{
+    text-transform: capitalize;
+}
+.experience{
+     padding: 20px;
+}
+.experience li{
+    text-transform: capitalize;
+    font-size: 15px;
+}
+.experience h1{
+    text-transform: capitalize;
+    font-weight: bold;
+    margin-left: -10px;
+}
+.experience h5{
+    text-transform: uppercase;
+}
+.experience p{
+    font-size: 15px;
+}
+.year{
+    width: 100px;
+    padding-left: 10px;
+    background: lightgray;
+}
+.para{
+    text-transform: capitalize;
+}
+.last{
+    margin-top: 70px;
+}
