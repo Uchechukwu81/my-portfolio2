@@ -20,6 +20,7 @@
     background: black;
     padding-right: 10px;
     margin: 0;
+    left: 0px;
 }
 #header{
     position: fixed;
@@ -27,182 +28,227 @@
     font-size: 15px;
     justify-content: center;
 }
-.navbar > ul > li{
+.nav-menu *{
+    list-style: none;
+}
+.nav-menu ul li{
     position: relative;
 }
-.navbar *{
-list-style: none;
-
-}
-.navbar a{
+.nav-menu a{
     display: flex;
-    margin-bottom: 8px;
-    background: grey;
-    height: 36px;
-    /* border: 1px solid red; */
-    color: white;
-    overflow: hidden;
-    border-radius: 50px;
     align-items: center;
     padding: 5px 5px;
+    margin-bottom: 8px;
+    border-radius: 50px;
+    background: grey;
+    height: 36px;
+    overflow: hidden;
+    color: aqua;
 }
-.navbar a span{
+.nav-menu a span{
     display: none;
-    margin-left: 10px;
 }
- a:hover, a:hover i, a:hover span {
-    color: white;
+a:hover a:hover i, a:hover span{
+    color: aqua;
     display: flex;
-    font-size: 15px;
+    font-size: 20px;
+    font-weight: bolder;
+    background: white;
 }
-.navbar a i{
+#home{
+    text-align: end;
+    padding-top: 30px;
+    z-index: 1;
+}
+#home h1{
+    font-size: 3rem;
     color: white;
-}
-.intro{
-    color: lightskyblue;
-    text-align: center;
-    text-transform: capitalize;
-    padding-top: 300px;
-}
-.intro h1{
-    text-transform: uppercase;
     font-weight: bolder;
-}
-.social{
     text-align: center;
 }
-.social a{
-    color: skyblue;
-    /* font-weight: bolder; */
+#home p{
+    color:white;
     font-size: 2rem;
-    padding: 0px 10px;
-}
-.social a:hover i{
-    color: blue;
-    background: red;
- }
-
-
-.contents{
-    /* margin: 2rem; */
-    left: 0px;
-}
-.contents h1{
-    text-align: center;
-    font-weight: bolder;
-    margin-top: 20px;
-
-}
-
-.contents p{
-  padding: 0px 5px; 
-  font-weight: lighter; 
-}
-
-.image{
-    height: 10vh;
-}
-.about  h1{
-    color: darkgray;
-    text-transform: capitalize;
-    font-size: large;
+    text-align: right;
 }
 .about{
+    background: lightblue;
+}
+.abouttitle{
+    text-align: center;
+    padding-top: 30px;
+}
+.line{
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 20px;
+    position: relative;
+}
+.line::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: black;
+    bottom: 1px;
+    left: calc(50% - 60px);
+}
+.line::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: aqua;
+    bottom: 0;
+    left: calc(50% - 20px);
+}
+.abouttitle .lead{
+    font-size: 15px;
+}
+.about #aboutt h5{
+    color: aqua;
+    text-align: center;
+}
+.about #aboutt .biodata ul{
+    list-style: none;
+}
+.about #aboutt .biodata ul .bi{
+    color: aqua;
+}
+.section-title h2{
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    position: relative;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.skills .progress{
+    height: 60px;
+    display: block;
+    background: none;
+    border-radius: 0;
+}
+.skills .progress .skill{
+    padding: 10px 0px;
+    margin: 0;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    color: aqua;
+}
+.skills .progress .skill .val{
+    float: right;
+    font-style: normal;
+}
+.skills .progress-bar-wrap{
+    background: #F2F3F5;
+}
+.skills .progress-bar{
+    height: 10px;
+    transition: 2s;
+}
+.skills #one{
+    height: 10px;
+    transition: 2s;
+    background-color:#d40957;
+    width: 344-25px;
+}
+.skills #two{
+    height: 10px;
+    transition: 2s;
+    background-color: #d40957;
+    width: 0px;
+}
+.skills #three{
+    height: 10px;
+    transition: 2s;
+    background-color: #d40957;
+    width: 229.5px;
+}
+.skills #four{
+    height: 10px;
+    transition: 2s;
+    background-color: #d40957;
+    width: 413.1px;
+}
+.skills #five{
+    height: 10px;
+    transition: 2s;
+    background-color: #d40957;
+    width: 321.3px;
+}
+.skills #four{
+    height: 10px;
+    transition: 2s;
+    background-color: #d40957;
+    width: 413.1px;
+}
+.resume h2{
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    position: relative;
+    text-align: center;
+    padding-top: 30px;
 
 }
-.profile1 ul li{
-    margin-left: -2rem;
-    list-style: none;
+.resume .resume-title{
+    text-shadow: 1px 1px 1px #d40957;
 }
-.profile1 i{
-    color: darkgray;
-    margin-left: 4px;
+.resume .resume-item h4{
+    font-size: 20px;
 }
-.profile1 strong{
-    margin-left: 5px;
+.resume .resume-item h5{
+    font-size: 15px;
 }
-.profile1 span{
-    margin-left: 10px;
+.resume ul{
+    list-style: disc;
 }
-.profile2 ul li{
-    margin-left: -2rem;
-    list-style: none;
-}
-.profile2 i{
-    color: darkgray;
-    margin-left: 4px;
-}
-.profile2 strong{
-    margin-left: 5px;
-}
-.profile2 span{
-    margin-left: 10px;
-}
-.and{
-    text-transform: capitalize;
-    padding-top: 10px;
-}
-.skills{
-    text-transform: capitalize;
-    padding-left: 30px;
-}
-.skills li{
-    list-style: circle;
-}
-.hobbies{
-    text-transform: capitalize;
-    padding-left: 40px;
-}
-.hobbies li{
-    list-style: circle;
-}
-.summary{
-     padding: 20px;
-     border-right: 1px solid black;
-}
-.summary h1{
-    text-transform: capitalize;
+.resume hr{
+    color: aqua;
     font-weight: bold;
-    margin-left: -15px;
 }
-.blue{
-    text-transform: uppercase;
+#footer{
+    background: grey;
+    color: #991346;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 30px;
 }
-.summary h5{
-    text-transform: uppercase;
-}
-.summary p{
+#footer h3{
     font-size: 15px;
+    font-weight: 700;
+    position: relative;
+    margin: 0 0 15px 0;
 }
-.summary li{
-    text-transform: capitalize;
+@media screen and (max-width:480px){
+    .background{
+        width: fit-content
+    }
+    .nav-menu a{
+        background: none;
+        height: 36px;
+        display: block;
+    }
+    a:hover, a:hover i, a:hover span{
+        color: #d40957;
+        display: flex;
+        font-size: 20px;
+        background: none;
+    }
+    a:hover span{
+        display: none;
+    }
 }
-.experience{
-     padding: 20px;
-}
-.experience li{
-    text-transform: capitalize;
-    font-size: 15px;
-}
-.experience h1{
-    text-transform: capitalize;
-    font-weight: bold;
-    margin-left: -10px;
-}
-.experience h5{
-    text-transform: uppercase;
-}
-.experience p{
-    font-size: 15px;
-}
-.year{
-    width: 100px;
-    padding-left: 10px;
-    background: lightgray;
-}
-.para{
-    text-transform: capitalize;
-}
-.last{
-    margin-top: 70px;
-}
+
+
+ 
+
+
+    
+
+
